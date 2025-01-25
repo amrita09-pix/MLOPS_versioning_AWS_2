@@ -1,0 +1,3 @@
+Building pipeline
+1. create github repo and clone in local
+2. add src folder with all components(run them individually)
