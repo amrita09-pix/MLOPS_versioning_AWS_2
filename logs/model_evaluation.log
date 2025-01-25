@@ -1,0 +1,9 @@
+2025-01-25 21:33:10,848 - model_evaluation - ERROR - Unexpected error has happened file must have 'read' and 'readline' attributes
+2025-01-25 21:35:45,026 - model_evaluation - ERROR - Error during model evaluation: cannot access local variable 'roc_auc_score' where it is not associated with a value
+2025-01-25 21:38:38,880 - model_evaluation - ERROR - Error during model evaluation: name 'y_test_proba' is not defined
+2025-01-25 21:38:55,998 - model_evaluation - DEBUG - evaluation metrics calculated
+2025-01-25 21:38:55,999 - model_evaluation - ERROR - Error occurred while saving the metrics: a bytes-like object is required, not 'str'
+2025-01-25 21:40:39,484 - model_evaluation - DEBUG - evaluation metrics calculated
+2025-01-25 21:40:39,484 - model_evaluation - ERROR - Error occurred while saving the metrics: Object of type function is not JSON serializable
+2025-01-25 21:41:26,924 - model_evaluation - DEBUG - evaluation metrics calculated
+2025-01-25 21:41:26,925 - model_evaluation - DEBUG - Metrics saved to report/metrics.json
