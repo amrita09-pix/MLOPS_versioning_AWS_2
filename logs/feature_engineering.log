@@ -11,3 +11,6 @@
 2025-01-21 23:45:32,431 - feature_engineering - DEBUG - tfidf applied and data transformed
 2025-01-21 23:45:32,470 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
 2025-01-21 23:45:32,480 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv
+2025-01-25 23:17:09,292 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-01-25 23:17:09,332 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
+2025-01-25 23:17:09,342 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv

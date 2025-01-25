@@ -4,3 +4,5 @@
 2025-01-21 22:21:08,864 - data_ingestion - DEBUG - Data preprocessing completed
 2025-01-21 22:21:08,866 - data_ingestion - ERROR - Failed to complete the data ingestion process: name 'text_data' is not defined
 2025-01-21 22:23:21,675 - data_ingestion - DEBUG - Data preprocessing completed
+2025-01-25 23:11:18,919 - data_ingestion - DEBUG - Data preprocessing completed
+2025-01-25 23:17:05,102 - data_ingestion - DEBUG - Data preprocessing completed
