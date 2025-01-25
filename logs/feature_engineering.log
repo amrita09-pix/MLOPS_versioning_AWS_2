@@ -1,0 +1,13 @@
+2025-01-21 23:32:10,128 - feature_engineering - ERROR - Unexpected error occurred while loading the data: [Errno 2] No such file or directory: '.data/interim/train_processed.csv'
+2025-01-21 23:34:22,453 - feature_engineering - ERROR - Unexpected error occurred while loading the data: [Errno 2] No such file or directory: '.data/interim/train_processed.csv'
+2025-01-21 23:39:27,290 - feature_engineering - ERROR - Error during TFIDF transformation: np.nan is an invalid document, expected byte or unicode string.
+2025-01-21 23:41:45,905 - feature_engineering - ERROR - Error during TFIDF transformation: Cannot set a frame with no defined index and a value that cannot be converted to a Series
+2025-01-21 23:43:53,933 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-01-21 23:43:53,934 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
+2025-01-21 23:43:53,934 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv
+2025-01-21 23:44:44,648 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-01-21 23:44:44,988 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
+2025-01-21 23:44:45,076 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv
+2025-01-21 23:45:32,431 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-01-21 23:45:32,470 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
+2025-01-21 23:45:32,480 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv
