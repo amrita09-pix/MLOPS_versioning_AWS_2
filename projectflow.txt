@@ -13,3 +13,4 @@ Setting up dvc pipeline(with params)
 9. add params set up
 10. do dvc repro to test the pipeline
 11. add git commit push
+12. git add commit push

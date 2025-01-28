@@ -6,8 +6,11 @@ import json
 from sklearn.metrics import accuracy_score,precision_score,recall_score,roc_auc_score
 import logging
 
+import yaml
+from dvclive import Live
+
+
 log_dir = 'logs'
-og_dir = 'logs'
 os.makedirs(log_dir, exist_ok=True)
 
 # logging configuration
@@ -27,6 +30,16 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+
+def load_params(params_path:str)-> dict:
+    try:
+        with open(params_path, 'r') as file:
+            params = yaml.safe_load(file)
+            logger.debug('parameters savely retrieved from yaml')
+            return params
+    except Exception as e:
+        logger.error('unexpected error has occured as %s',e)
+        raise
 
 def load_model(file_path:str):
     try:
@@ -82,11 +95,19 @@ def save_metrics(metrics_dict:dict,file_path)->None:
         raise
 
 def main():
+    params = load_params(params_path ='params.yaml')
     model =load_model('/Users/amritamandal/MLOPS_new_2/MLOPS_versioning_AWS_2/models/model.pkl')
     test_data = pd.read_csv('/Users/amritamandal/MLOPS_new_2/MLOPS_versioning_AWS_2/data/processed/test_tfidf.csv')
     x_test = test_data.iloc[:,:-1].values
     y_test = test_data.iloc[:,-1].values
     metrics = evaluate_model(model,x_test,y_test)
+
+    with Live(save_dvc_exp=True) as live:
+        live.log_metric('accuracy', accuracy_score(y_test,y_test))
+        live.log_metric('precision', precision_score(y_test,y_test))
+        live.log_metric('recall', recall_score(y_test,y_test))
+        live.log_metric('roc_auc', roc_auc_score(y_test,y_test))
+        live.log_params(params)
     save_metrics(metrics, 'report/metrics.json')
 
 if __name__=='__main__':
