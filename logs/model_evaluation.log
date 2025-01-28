@@ -13,3 +13,5 @@
 2025-01-25 23:18:25,862 - model_evaluation - DEBUG - Metrics saved to report/metrics.json
 2025-01-25 23:18:55,013 - model_evaluation - DEBUG - evaluation metrics calculated
 2025-01-25 23:18:55,013 - model_evaluation - DEBUG - Metrics saved to report/metrics.json
+2025-01-28 20:57:04,005 - model_evaluation - DEBUG - evaluation metrics calculated
+2025-01-28 20:57:04,006 - model_evaluation - DEBUG - Metrics saved to report/metrics.json

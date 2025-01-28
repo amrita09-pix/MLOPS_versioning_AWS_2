@@ -11,3 +11,13 @@
 2025-01-25 23:18:07,781 - model_building - DEBUG - initialising random forest with parameters: {'n_estimators': 25, 'random_state': 2}
 2025-01-25 23:18:07,833 - model_building - DEBUG - model training completed
 2025-01-25 23:18:07,834 - model_building - DEBUG - model saved to models/model.pkl
+2025-01-28 20:54:27,914 - model_building - DEBUG - parameters savely retrieved from yaml
+2025-01-28 20:54:27,919 - model_building - DEBUG - data loaded from /Users/amritamandal/MLOPS_new_2/MLOPS_versioning_AWS_2/data/processed/train_tfidf.csv with shape (4194, 51)
+2025-01-28 20:54:27,919 - model_building - DEBUG - initialising random forest with parameters: {'n_estimators': 25, 'random_state': 2}
+2025-01-28 20:54:27,972 - model_building - DEBUG - model training completed
+2025-01-28 20:54:27,974 - model_building - DEBUG - model saved to models/model.pkl
+2025-01-28 20:57:03,296 - model_building - DEBUG - parameters savely retrieved from yaml
+2025-01-28 20:57:03,305 - model_building - DEBUG - data loaded from /Users/amritamandal/MLOPS_new_2/MLOPS_versioning_AWS_2/data/processed/train_tfidf.csv with shape (3705, 76)
+2025-01-28 20:57:03,305 - model_building - DEBUG - initialising random forest with parameters: {'n_estimators': 25, 'random_state': 2}
+2025-01-28 20:57:03,380 - model_building - DEBUG - model training completed
+2025-01-28 20:57:03,383 - model_building - DEBUG - model saved to models/model.pkl

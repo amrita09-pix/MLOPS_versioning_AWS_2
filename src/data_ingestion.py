@@ -3,6 +3,7 @@ import os
 from sklearn.model_selection import train_test_split
 import logging
 import requests
+import yaml
 
 log_dir = "logs"
 os.makedirs(log_dir,exist_ok =True) # checks whether the directory exists, if yes it doesnt overwrite
@@ -22,6 +23,16 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+
+def load_params(params_path:str)-> dict:
+    try:
+        with open(params_path, 'r') as file:
+            params = yaml.safe_load(file)
+            logger.debug('parameters savely retrieved from yaml')
+            return params
+    except Exception as e:
+        logger.error('unexpected error has occured as %s',e)
+        raise
 
 def load_data(url):
     try:
@@ -59,7 +70,9 @@ def save_data(train_data,test_data,data_path):
 
 def main():
     try:
-        test_size = 0.2
+        params = load_params(params_path = 'params.yaml')
+        test_size = params['data_ingestion']['test_size']
+
         url = 'https://raw.githubusercontent.com/vikashishere/Datasets/main/spam.csv'
         response = requests.get(url)
         if response.status_code == 200:

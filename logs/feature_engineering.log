@@ -14,3 +14,11 @@
 2025-01-25 23:17:09,292 - feature_engineering - DEBUG - tfidf applied and data transformed
 2025-01-25 23:17:09,332 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
 2025-01-25 23:17:09,342 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv
+2025-01-28 20:52:30,346 - feature_engineering - DEBUG - parameters savely retrieved from yaml
+2025-01-28 20:52:30,376 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-01-28 20:52:30,415 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
+2025-01-28 20:52:30,425 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv
+2025-01-28 20:57:02,571 - feature_engineering - DEBUG - parameters savely retrieved from yaml
+2025-01-28 20:57:02,600 - feature_engineering - DEBUG - tfidf applied and data transformed
+2025-01-28 20:57:02,653 - feature_engineering - DEBUG - Data saved to ./data/processed/train_tfidf.csv
+2025-01-28 20:57:02,676 - feature_engineering - DEBUG - Data saved to ./data/processed/test_tfidf.csv

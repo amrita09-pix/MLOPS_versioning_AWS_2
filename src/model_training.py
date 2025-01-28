@@ -4,6 +4,7 @@ import pandas as pd
 import pickle
 import logging 
 from sklearn.ensemble import RandomForestClassifier
+import yaml
 
 log_dir = 'logs'
 
@@ -23,6 +24,16 @@ file_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
 logger.addHandler(file_handler)
+
+def load_params(params_path:str)-> dict:
+    try:
+        with open(params_path, 'r') as file:
+            params = yaml.safe_load(file)
+            logger.debug('parameters savely retrieved from yaml')
+            return params
+    except Exception as e:
+        logger.error('unexpected error has occured as %s',e)
+        raise
 
 def load_data(file_path:str):
     try:
@@ -63,7 +74,10 @@ def save_model(model, file_path:str) -> None:
 
 def main():
     try:
-        params = {'n_estimators':25,'random_state':2}
+        params = load_params(params_path = 'params.yaml')
+        n_estimators = params['model_training']['n_estimators']
+        random_state = params['model_training']['random_state']
+        params = {'n_estimators':n_estimators ,'random_state':random_state}
         train_data = load_data('/Users/amritamandal/MLOPS_new_2/MLOPS_versioning_AWS_2/data/processed/train_tfidf.csv')
         x_train = train_data.iloc[:,:-1].values
         y_train = train_data.iloc[:,-1].values

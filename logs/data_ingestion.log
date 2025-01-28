@@ -6,3 +6,7 @@
 2025-01-21 22:23:21,675 - data_ingestion - DEBUG - Data preprocessing completed
 2025-01-25 23:11:18,919 - data_ingestion - DEBUG - Data preprocessing completed
 2025-01-25 23:17:05,102 - data_ingestion - DEBUG - Data preprocessing completed
+2025-01-28 20:50:23,456 - data_ingestion - DEBUG - parameters savely retrieved from yaml
+2025-01-28 20:50:24,213 - data_ingestion - DEBUG - Data preprocessing completed
+2025-01-28 20:56:57,793 - data_ingestion - DEBUG - parameters savely retrieved from yaml
+2025-01-28 20:56:58,331 - data_ingestion - DEBUG - Data preprocessing completed
